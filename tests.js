@@ -26,4 +26,8 @@ describe('listToArray', function() {
 	it('returns a empty array when only given whitespace and commas', function() {
 		listToArray(' , ').must.eql([]);
 	});
+	it('returns an array if it is provided', function() {
+		var arr = [1,2,3];
+		listToArray(arr).must.be(arr);
+	});
 });
