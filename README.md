@@ -4,6 +4,8 @@ Simple javascript lib for converting a [comma || space] delimited string to an a
 
 Trims values so you can use human-friendly lists like `'one, two, three' => ['one','two','three']`
 
+If in array is provided, it is simply returned. If a falsy or non-string value is provided, an empty array is returned.
+
 Won't work with values that contain spaces.
 
 ## Installation
